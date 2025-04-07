@@ -14,6 +14,7 @@ const sources = [
   // Add other 2 sources similarly
 ];
 
+
 const fetchAllQuotes = async () => {
   const results = await Promise.all(sources.map(src => src.fetch()));
   return results;
